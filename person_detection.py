@@ -19,10 +19,10 @@ import tarfile
 import urllib.request
 
 # Download and extract model
-MODEL_DATE = '20200711'
-MODEL_NAME = 'ssd_resnet101_v1_fpn_640x640_coco17_tpu-8'
+MODEL_DATE = ####################    PLACEHOLDER    ######################
+MODEL_NAME = ####################    PLACEHOLDER    ######################
 MODEL_TAR_FILENAME = MODEL_NAME + '.tar.gz'
-MODELS_DOWNLOAD_BASE = 'http://download.tensorflow.org/models/object_detection/tf2/'
+MODELS_DOWNLOAD_BASE = #############    PLACEHOLDER ###################
 MODEL_DOWNLOAD_LINK = MODELS_DOWNLOAD_BASE + MODEL_DATE + '/' + MODEL_TAR_FILENAME
 PATH_TO_MODEL_TAR = os.path.join(MODELS_DIR, MODEL_TAR_FILENAME)
 PATH_TO_CKPT = os.path.join(MODELS_DIR, os.path.join(MODEL_NAME, 'checkpoint/'))
@@ -39,7 +39,7 @@ if not os.path.exists(PATH_TO_CKPT):
 # Download labels file
 LABEL_FILENAME = 'mscoco_label_map.pbtxt'
 LABELS_DOWNLOAD_BASE = \
-    'https://raw.githubusercontent.com/tensorflow/models/master/research/object_detection/data/'
+    ####################    PLACEHOLDER    ######################
 PATH_TO_LABELS = os.path.join(MODELS_DIR, os.path.join(MODEL_NAME, LABEL_FILENAME))
 if not os.path.exists(PATH_TO_LABELS):
     print('Downloading label file... ', end='')
